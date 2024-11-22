@@ -7,11 +7,14 @@ const n4 = 5;
 // Check one: add up to 50
 // This is a fairly simple operation using
 // arithmetic operators and a comparison.
-if (n1 % 5 == 0 && n2 % 5 == 0 && n3 % 5 == 0 && n4 % 5 == 0) {
-  console.log("all the numbers are devisible by 5");
-} else {
-  console.log("all the numbers are NOT devisible by 5");
-}
+// if (n1 / 5 == 0 && n2 / 5 == 0 && n3 / 5 == 0 && n4 / 5 == 0) {
+//   console.log("all the numbers are devisible by 5");
+// } else {
+//   console.log("all the numbers are NOT devisible by 5");
+// }
+
+// console.log("all the numbers are NOT devisible by 5");
+
 const isSum50 = n1 + n2 + n3 + n4 == 50;
 
 // Check two: at least two odd numbers
@@ -39,7 +42,7 @@ const isUnique =
 const isValid = isSum50 && isTwoOdd && !isOver25 && isUnique;
 
 // Finally, log the results.
-console.log(isValid);
+// console.log(isValid);
 
 // Here's another example of how this COULD be done,
 // but it SHOULD NOT be done this way. As programmers,
@@ -55,3 +58,6 @@ const dontDoThis =
   n2 != n3 &&
   n2 != n4 &&
   n3 != n4;
+
+let result = n1 % 5 == 0 && n2 % 5 == 0 && n3 % 5 == 0 && n4 % 5 == 0;
+console.log("are all numbers are divisible by 5:", result);
