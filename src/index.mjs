@@ -13,6 +13,19 @@ console.log("Is the first number is larger than the last?  ", result);
 let result3 = ((n4 - n1) * n3) % n4;
 console.log(result3);
 
+const isOver25 = n1 > 25 || n2 > 25 || n3 > 25 || n4 > 25;
+// console.log("is over 25", !isOver25);
+
+// How many gallons of fuel will you need for the entire trip?
+const mph1 = 55;
+const mph2 = 60;
+const mph3 = 75;
+const distance = 1500;
+const fuelBadget = 175;
+const costOfGallon = 3;
+
+let mphResult = distance / 30;
+
 // Check one: add up to 50
 // This is a fairly simple operation using
 // arithmetic operators and a comparison.
@@ -35,7 +48,6 @@ const isTwoOdd = (n1 % 2) + (n2 % 2) + (n3 % 2) + (n4 % 2) >= 2;
 // Check three: no number larger than 25
 // This time, we use the OR operator to check
 // if ANY of the numbers is larger than 25.
-const isOver25 = n1 > 25 || n2 > 25 || n3 > 25 || n4 > 25;
 
 // Check four: all unique numbers
 // This is long, and there are more efficient
