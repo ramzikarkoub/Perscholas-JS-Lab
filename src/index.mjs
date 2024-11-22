@@ -4,6 +4,15 @@ const n2 = 15;
 const n3 = 20;
 const n4 = 5;
 
+let result = n1 % 5 == 0 && n2 % 5 == 0 && n3 % 5 == 0 && n4 % 5 == 0;
+console.log("Are all numbers are divisible by 5?  ", result);
+
+let result2 = n1 > n4;
+console.log("Is the first number is larger than the last?  ", result);
+
+let result3 = ((n4 - n1) * n3) % n4;
+console.log(result3);
+
 // Check one: add up to 50
 // This is a fairly simple operation using
 // arithmetic operators and a comparison.
@@ -58,6 +67,3 @@ const dontDoThis =
   n2 != n3 &&
   n2 != n4 &&
   n3 != n4;
-
-let result = n1 % 5 == 0 && n2 % 5 == 0 && n3 % 5 == 0 && n4 % 5 == 0;
-console.log("are all numbers are divisible by 5:", result);
