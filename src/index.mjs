@@ -10,11 +10,13 @@ console.log("Are all numbers are divisible by 5?  ", result);
 let result2 = n1 > n4;
 console.log("Is the first number is larger than the last?  ", result);
 
-let result3 = ((n4 - n1) * n3) % n4;
+let result3 = ((n2 - n1) * n3) % n4;
 console.log(result3);
 
 const isOver25 = n1 > 25 || n2 > 25 || n3 > 25 || n4 > 25;
-// console.log("is over 25", !isOver25);
+
+const isUnder25 = n1 < 25 || n2 < 25 || n3 < 25 || n4 < 25;
+console.log("is over 25", !isUnder25);
 
 // How many gallons of fuel will you need for the entire trip?
 const mph1 = 55;
