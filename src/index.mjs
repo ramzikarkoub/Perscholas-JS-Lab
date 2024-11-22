@@ -7,6 +7,11 @@ const n4 = 5;
 // Check one: add up to 50
 // This is a fairly simple operation using
 // arithmetic operators and a comparison.
+if (n1 % 5 == 0 && n2 % 5 == 0 && n3 % 5 == 0 && n4 % 5 == 0) {
+  console.log("all the numbers are devisible by 5");
+} else {
+  console.log("all the numbers are NOT devisible by 5");
+}
 const isSum50 = n1 + n2 + n3 + n4 == 50;
 
 // Check two: at least two odd numbers
