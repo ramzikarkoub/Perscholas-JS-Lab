@@ -81,3 +81,18 @@ const dontDoThis =
   n2 != n3 &&
   n2 != n4 &&
   n3 != n4;
+
+// Practice
+//   Write a nested if...else statement.
+// Declare a variable called num.
+let num = -90;
+// Add an if...else statement that checks if num is positive & greater than 100.
+// Add another statement that checks if num is positive but less than 100.
+// Add a final statement to check if num is negative.
+if (num > 100) {
+  console.log(`${num} is positive & greater than 100`);
+} else if (num >= 0 && num < 100) {
+  console.log(`${num} is positive but less than 100`);
+} else if (num < 0) {
+  console.log(`${num} is negative`);
+}
