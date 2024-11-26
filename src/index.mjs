@@ -96,3 +96,23 @@ if (num > 100) {
 } else if (num < 0) {
   console.log(`${num} is negative`);
 }
+
+function nextPrime(num) {
+  // Helper function to check if a number is prime
+  function isPrime(n) {
+    if (n < 2) return false;
+    for (let i = 2; i <= Math.sqrt(n); i++) {
+      if (n % i === 0) return false;
+    }
+    return true;
+  }
+
+  let candidate = num + 1; // Start checking from the next number
+  while (!isPrime(candidate)) {
+    candidate++;
+  }
+
+  return candidate;
+}
+console.log(nextPrime(10)); // Output: 11
+console.log(nextPrime(17)); // Output: 19
